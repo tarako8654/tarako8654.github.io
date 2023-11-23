@@ -169,13 +169,13 @@ parallax
 .parallax1{
   width: 100%;
   height: 25vh;
-  background: url(../img/parallax01.jpg) no-repeat center center/cover fixed;
+  background: url(../img/nav-back.jpg) no-repeat center center/cover fixed;
   margin-bottom: 100px;
 }
 .parallax2{
   width: 100%;
   height: 25vh;
-  background: url(../img/parallax02.jpg) no-repeat center center/cover fixed;
+  background: url(../img/nav-back.jpg) no-repeat center center/cover fixed;
   margin-bottom: 100px;
 }
 
@@ -249,12 +249,12 @@ mb
   }
   .parallax1{
     height: 10vh;
-    background: url(../img/parallax01.jpg) no-repeat center center/cover;
+    background: url(../img/nav-back.jpg) no-repeat center center/cover;
     margin-bottom: 50px;
   }
   .parallax2{
     height: 10vh;
-    background: url(../img/parallax02.jpg) no-repeat center center/cover;
+    background: url(../img/nav-back.jpg) no-repeat center center/cover;
     margin-bottom: 50px;
   }
   #contact{
