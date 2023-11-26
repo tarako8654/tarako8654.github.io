@@ -6,7 +6,6 @@
   <title>Aurola's sweet escape</title>
   <link rel="icon" href="favicon.png">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/jquery.bxslider.css">
   <link rel="stylesheet" href="css/hamburgers.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,7 +21,7 @@
     </p>
   </header>
   
-  <nav id="local-nav">
+  <nav id="nav">
     <ul>
     <li><a href="https://auro.stores.jp/" target="_blank" rel="noopener noreferrer">オンラインSHOP</a></li>
     <li><a href="#about">about</a></li>
@@ -34,14 +33,11 @@
   <main>
     
     <div class="main-visual">
-      <ul class="bxslider">
-        <li><img src="img/main1.jpg" alt="メイン画像"></li>
-        <!-- <li><img src="img/main2.jpg" alt="メイン画像"></li> -->
-      </ul>
+      <div class="main-img"></div>
+
 
       <div class="main-text-wrapper">
         <h1>Aurola's sweet escape</h1>
-        <!-- <p class="lead">甘く非日常な素敵なひとときを彩るケーキSHOPです</p> -->
       </div>
 
     </div><!-- main-visual -->
@@ -115,27 +111,18 @@
 <script src="js/jquery.bxslider.js"></script>
 <script>
   $(function(){
-    $('.bxslider').bxSlider({
-      pager: false,
-      controls: false,
-      auto: true,
-      mode: 'fade',
-      speed: 4000,
-      pause: 4000
-    });
-  });
 
   // ハンバーガーボタン
   $('#ham-btn').on('click',function(){
         $(this).toggleClass('is-active');
-        $('#local-nav').fadeToggle(300);
+        $('#nav').fadeToggle(300);
     });
 
   
-  $('#local-nav').hide();
+  $('#nav').hide();
 
   // クリックで飛んだらnavを隠す
-  $('#local-nav a').on('click',function(){
+  $('#nav a').on('click',function(){
         $('#local-nav').fadeOut(200);
         $('#ham-btn').removeClass('is-active');
     });
@@ -146,7 +133,7 @@
     console.log(fullYear);
     $('#this-year').text(fullYear);
 
-
+  });
 </script>
 
   

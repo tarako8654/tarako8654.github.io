@@ -21,13 +21,13 @@ header/nav
   background-color: #afafafaa;
 }
 
-#local-nav{
+#nav{
   width: 100%;
   height: 100vh;
   position: fixed;
   z-index: 300;
 }
-#local-nav ul{
+#nav ul{
   width: 100%;
   height: 100vh;
   background: url(../img/nav-back.jpg) no-repeat center/cover;
@@ -35,10 +35,10 @@ header/nav
   text-align: center;
   padding: 150px 0 0 0;
 }
-#local-nav li{
+#nav li{
   padding: 25px 0;
 }
-#local-nav ul a{
+#nav ul a{
   display: block;
   color: #fff;
   font-size: 20px;
@@ -52,31 +52,18 @@ main-visual
   position: relative;
   margin-bottom: 200px;
 }
-.main-visual ul{
+.main-img{
+  background: url(../img/main1.jpg) no-repeat center/cover;
   width: 100%;
   height: 100vh;
 }
-.main-visual li{
-  width: 100%;
-  height: 100vh;
-}
-.main-visual li img{
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-}
+
 h1{
-  /* position: absolute;
-  top: 30vh;
-  left: 15%; */
   margin-bottom: 10px;
   font-size: 50px;
   color: #fff;
 }
 .lead{
-  /* position: absolute;
-  top: 45vh;
-  left: 15%; */
   color: #000;
   font-size: 20px;
   line-height: 1.7;
